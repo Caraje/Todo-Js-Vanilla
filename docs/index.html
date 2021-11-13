@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="main.css" rel="stylesheet"></head>
+<body>
+    
+    <div class="background"></div>
+    
+    <header class="container home">
+        <h1 class="home__title">TO-DO App</h1>
+    </header>
+    <main class="container app">
+        <section  class="app__input">
+            <input id="task-input" type="text" placeholder="Crea una tarea">
+        </section>
+
+        <section class="app__todos">
+            <div class="app__todos__list">
+
+            </div>
+
+            <div class="app__todos__buttons filters">
+                <button id="btn-all" class="app__todos__buttons__btn filter">Todos</button>
+                <button id="btn-pending" class="app__todos__buttons__btn filter">Pendientes</button>
+                <button id="btn-complet" class="app__todos__buttons__btn filter">Completados</button>
+                <button id="btn-delete-completes" class="app__todos__buttons__btn">Borrar Completados</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="container footer-home">Creado por <a href="https://carlosajenjo.com/" target="_blank" rel="noreferrer">www.<span>carlosajenjo</span>.com</a></footer>
+
+
+    <script src="./assets/js/main.js"></script>
+<script type="text/javascript" src="main.js"></script></body>
+</html>

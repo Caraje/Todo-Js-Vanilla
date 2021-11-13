@@ -1,0 +1,205 @@
+
+
+
+:root {
+    --purple: #b65fec;
+    --blue: #6fa6f9;
+    --dark: #3b3a3f;
+    --light: #f3f3f3;
+    --black: #000;
+    --white: #fff;
+    --grey: #ddd;
+
+    --titles: 'Roboto', sans-serif;
+    --todoText: 'Architects Daughter', cursive;
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+
+}
+
+
+
+
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--todoText);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.background{
+    background-image: url("./images/montains.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: violet;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+
+    width: 100%;
+    height: 30vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.home{
+    margin-top: 2.5em;
+}
+.home__title {
+    font-family: var(--titles);
+    font-weight: 500;
+
+    color: var(--light);
+    text-align: center;
+}
+
+.app{
+    width: 90%;
+}
+
+.app__input{
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid var(--grey);
+    padding: .5em;
+    background-color: var(--white);
+    
+}
+
+.app__input input {
+    border: none;
+    border-radius: 3px;
+    padding: .3em .5rem;
+    width: 100%;
+    font-size: .8rem;
+    font-family: var(--todoText);
+}
+
+.app__todos{
+    width: 95%;
+    margin: 1em auto;
+    border-radius: 3px;
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    box-shadow: 0px 0px 76px -33px rgba(0,0,0,1);
+}
+
+.app__todos__todo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--grey);
+    padding: .5em .5em;
+}
+
+.app__todos__todo__texts {
+    display: flex;
+
+}
+
+.app__todos__todo__texts__check {
+    background-color: violet;
+    margin: auto 1em auto .5em;
+    display: block;
+}
+
+.completed {
+    color:#bbb;
+}
+
+.app__todos__todo__texts__text {
+    margin: auto 0 ;
+    
+}
+
+.app__todos__todo__delete {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--dark);
+    transition: color 0.5s ease-in-out;
+    color: transparent;
+    
+}
+
+
+
+.app__todos__todo__delete:hover {
+    color: var(--purple);
+    
+}
+
+
+.app__todos__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: .5em auto;
+    width: 95%;
+}
+
+.app__todos__buttons__btn {
+    border: none;
+    background-color: transparent;
+    color: var(--dark);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    margin: .5em auto;
+
+
+}
+
+.app__todos__buttons__btn:hover {
+    color: var(--purple);
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-home {
+    margin-top: auto;
+    padding: 1em;
+
+}
+
+
+.footer-home a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.footer-home a span {
+    color: var(--purple);
+    font-weight: 600;
+}
